@@ -1,0 +1,103 @@
+{
+  "current": {
+    "certificate_link": "https:\/\/api-prod.emotcia.com\/certificate",
+    "favicon": "shopify:\/\/shop_images\/favicon2_2.png",
+    "facebook_link": "https:\/\/www.facebook.com\/emotcia.experience",
+    "instagram_link": "https:\/\/www.instagram.com\/emotcia.sd\/",
+    "email_link": "mailto:info@emotcia.com",
+    "checkout_header_image": "shopify:\/\/shop_images\/Copy_of_Untitled_Design-27.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/Emotsia_logo-01_2_2.png",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "large",
+    "checkout_body_background_image": "shopify:\/\/shop_images\/Copy_of_Untitled_Design-26.png",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "shopify:\/\/shop_images\/Frame_5002.png",
+    "checkout_accent_color": "#58146a",
+    "checkout_button_color": "#58146a",
+    "sections": {
+      "header": {
+        "type": "header",
+        "blocks": {
+          "0ecc46ea-aa5a-4f29-b5b8-a9ae61eba0c0": {
+            "type": "submenu",
+            "settings": {
+              "submenu_title": "Experiences",
+              "submenu": "collection-page-submenu"
+            }
+          },
+          "2ffcafde-317d-4f77-b1ca-01e0e9688e52": {
+            "type": "submenu",
+            "settings": {
+              "submenu_title": "More",
+              "submenu": "more"
+            }
+          }
+        },
+        "block_order": [
+          "0ecc46ea-aa5a-4f29-b5b8-a9ae61eba0c0",
+          "2ffcafde-317d-4f77-b1ca-01e0e9688e52"
+        ],
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/logo.png",
+          "menu": "header-menu",
+          "button_text": "Activate certificate"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "f1a2eeed-3d1b-4cc6-92c0-c8ad2c6edd66": {
+            "type": "link_list",
+            "settings": {
+              "menu": "footer-menu-left-part"
+            }
+          },
+          "785cb264-38a6-4040-9b54-a3e0fb8385c1": {
+            "type": "link_list",
+            "settings": {
+              "menu": "footer-menu-right-part"
+            }
+          }
+        },
+        "block_order": [
+          "f1a2eeed-3d1b-4cc6-92c0-c8ad2c6edd66",
+          "785cb264-38a6-4040-9b54-a3e0fb8385c1"
+        ],
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/Emotsia_logo-01_2_1_6b1f9adb-4ef0-45bb-9e3c-bbc39921fa39.png",
+          "logo_mobile": "shopify:\/\/shop_images\/Emotsia_logo-01_2_1_6b1f9adb-4ef0-45bb-9e3c-bbc39921fa39.png",
+          "description": "<p>Emotcia - more than a gift!<\/p><p>Don't be shy!<\/p><p>Tag us on social media<\/p>",
+          "copyright_text": "Ⓒ 2023 emotcia.com",
+          "is_social": true
+        }
+      },
+      "cart-drawer": {
+        "type": "cart-drawer",
+        "settings": {
+          "is_cart_drawer": true
+        }
+      },
+      "error-modal": {
+        "type": "error-modal",
+        "settings": {
+          "title": "Oops!",
+          "image": "shopify:\/\/shop_images\/image_2.png"
+        }
+      },
+      "message-modal": {
+        "type": "message-modal",
+        "settings": {
+          "gift_title": "You have already chosen the experience for yourself. Want to buy as a gift?",
+          "gift_description": "You can add only one type of experience to your cart: as a gift or for yourself. If you want to buy both impressions for yourself and for a gift, you must first place one order, and then the second.",
+          "single_title": "You have already chosen the experience as a gift. Do you want to buy for yourself?",
+          "single_description": "You can add only one type of experience to your cart: as a gift or for yourself. If you want to buy both impressions for yourself and for a gift, you must first place one order, and then the second."
+        }
+      }
+    },
+    "content_for_index": []
+  },
+  "presets": {
+    "Default": {}
+  }
+}
