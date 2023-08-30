@@ -27,6 +27,7 @@ updateSource() {
   # Fetch local origin
   git fetch origin
   # Checkout to local origin
+  git config checkout.defaultRemote origin
   git checkout $LOCAL_BRANCH
   # Pull from latest origin
   git pull origin $LOCAL_BRANCH
