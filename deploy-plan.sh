@@ -38,10 +38,14 @@ updateSource() {
   SETTINGS_FILE="config/settings_schema.json"
   THEME_VERSION=($(jq -r ".[0].theme_version" $SETTINGS_FILE))
   # Undo changes to files we don't want to change from source
+  echo '--------------'
   git reset $LOCAL_BRANCH -- ${IGNORED[@]}
+  echo '**************'
   git restore .
+  echo '!!!!!!!!!!!!!!!!!'
   # Remove any new files that were created by source that we don't want
   git clean -fd
+  echo ',,,,,,,,,,,,,,,,,,'
   # Replace child theme version with base theme version
   echo "$(jq --arg v $THEME_VERSION '.[0].theme_version = $v' $SETTINGS_FILE)" > $SETTINGS_FILE
   git add $SETTINGS_FILE
