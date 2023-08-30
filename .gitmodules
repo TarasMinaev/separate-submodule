@@ -1,3 +1,4 @@
 [submodule "separate-submodule"]
 	path = separate-submodule
 	url = git@github.com:TarasMinaev/separate-submodule.git
+	branch = test-pipelines
