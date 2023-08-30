@@ -1,3 +1,3 @@
-[submodule "SubmoduleTestRepo"]
-    path = brands
+[submodule "separate-submodule"]
+    path = brands/separate-submodule
     url = git@github.com:TarasMinaev/separate-submodule.git
