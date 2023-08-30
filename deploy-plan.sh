@@ -6,8 +6,8 @@
 
 ALL_SITES=($(ls brands))
 REMOTE_ORIGIN_NAME="source"
-REMOTE_BRANCH="stage"
-LOCAL_BRANCH="stage"
+REMOTE_BRANCH="main"
+LOCAL_BRANCH="main"0
 IGNORED=($(cat .deployignore))
 
 updateSource() {
@@ -23,26 +23,31 @@ updateSource() {
   git remote -v
 
   # Fetch source repo branches
+  echo 'Fetch!!!!'
   git fetch $REMOTE_ORIGIN_NAME
   # Fetch local origin
+  echo 'Fetch_origin!!!!'
   git fetch origin
   # Checkout to local origin
+  echo 'Checkout!!!!'
   git checkout $LOCAL_BRANCH
   # Pull from latest origin
+  echo 'pull!!!!!!!!!!'
   git pull origin $LOCAL_BRANCH
   # Checkout to a new temporary integration branch
   git checkout -b "${REMOTE_ORIGIN_NAME}_${REMOTE_BRANCH}"
   # Merge source branch onto local temporary integration branch but do not commit yet
+  echo 'Merge!!!!'
   git merge -X theirs --no-ff --no-commit --allow-unrelated-histories "${REMOTE_ORIGIN_NAME}/${REMOTE_BRANCH}"
   # Save base theme version
   SETTINGS_FILE="config/settings_schema.json"
   THEME_VERSION=($(jq -r ".[0].theme_version" $SETTINGS_FILE))
   # Undo changes to files we don't want to change from source
-  echo '--------------'
+  echo 'reset--------------'
   git reset $LOCAL_BRANCH -- ${IGNORED[@]}
-  echo '**************'
+  echo 'restore**************'
   git restore .
-  echo '!!!!!!!!!!!!!!!!!'
+  echo 'clean.....!!!!!!!!!!!!!!!!!'
   # Remove any new files that were created by source that we don't want
   git clean -fd
   echo ',,,,,,,,,,,,,,,,,,'
@@ -50,6 +55,7 @@ updateSource() {
   echo "$(jq --arg v $THEME_VERSION '.[0].theme_version = $v' $SETTINGS_FILE)" > $SETTINGS_FILE
   git add $SETTINGS_FILE
   # Commit merging source
+  echo 'commit____________1'
   git commit -m "Merge ${REMOTE_ORIGIN_NAME}/${REMOTE_BRANCH}"
 }
 
