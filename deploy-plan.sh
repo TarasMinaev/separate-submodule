@@ -7,7 +7,7 @@
 ALL_SITES=($(ls brands))
 REMOTE_ORIGIN_NAME="source"
 REMOTE_BRANCH="main"
-LOCAL_BRANCH="main"0
+LOCAL_BRANCH="main"
 IGNORED=($(cat .deployignore))
 
 updateSource() {
