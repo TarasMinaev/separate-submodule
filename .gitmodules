@@ -1,4 +1,4 @@
 [submodule "brands/separate-submodule"]
 	path = brands/separate-submodule
 	url = git@github.com:TarasMinaev/separate-submodule.git
-	branch = stage
+

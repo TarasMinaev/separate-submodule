@@ -30,6 +30,7 @@ updateSource() {
   git fetch origin
   # Checkout to local origin
   echo 'Checkout!!!!'
+  git config checkout.defaultRemote origin
   git checkout $LOCAL_BRANCH
   # Pull from latest origin
   echo 'pull!!!!!!!!!!'
