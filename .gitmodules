@@ -1,3 +1,0 @@
-[submodule "separate-submodule"]
-    path = brands/separate-submodule
-    url = https://github.com/TarasMinaev/separate-submodule.git
